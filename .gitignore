@@ -341,3 +341,7 @@ healthchecksdb
 /LB__1/LB__1.csproj
 /LB__1/Main/Main.csproj
 /LB__1/Program.cs
+/LB__1/Main/Properties/AssemblyInfo.cs
+/LB__1/Main/App.config
+/LB__1/Properties/AssemblyInfo.cs
+/LB__1/App.config
