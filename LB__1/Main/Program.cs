@@ -118,21 +118,20 @@ namespace LB__1
             AddArr(arr, a);                                               //Переходим в функ-ю заполнения строк
 
             Console.WriteLine("\nИзначальный массив:");
-            WriteArr(arr);                                              //Функ-я вывода
+            WriteArr(arr);                                             //Функ-я вывода
 
            int[] minRow = arr[0];                                    //Ставим поумолчанию мин строку массива
            int[] maxRow = arr[0];                                   //Ставим поумолчанию макс строку массива
 
            minRow = FunArr_Min(arr, minRow);                      //Переходим в функ-ю для нахождения мин. строки
            maxRow = FunArr_Max(arr, maxRow);                     //Переходим в функ-ю для нахождения макс. строки
-            arr = ModifFunArr(arr, minRow, maxRow, a);          //Переходим в функ-ю модернизации рванного массива
+           arr = ModifFunArr(arr, minRow, maxRow, a);           //Переходим в функ-ю модернизации рванного массива
 
-            //вывод измененного исходного массива
-            System.Console.WriteLine("Измененный массив:");
-            WriteArr(arr);                                   //Функ-я вывода
+           System.Console.WriteLine("Измененный массив:");
+           WriteArr(arr);                                   //Функ-я вывода
 
 
-            System.Console.ReadKey();
+           System.Console.ReadKey();
         }
     }
 }
