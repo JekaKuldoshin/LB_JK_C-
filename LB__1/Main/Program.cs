@@ -123,8 +123,8 @@ namespace LB__1
            int[] minRow = arr[0];                                    //Ставим поумолчанию мин строку массива
            int[] maxRow = arr[0];                                   //Ставим поумолчанию макс строку массива
 
-           minRow = FunArr_Min(arr, minRow);                      //Переходим в функ-ю для нахождения мин. строки
-           maxRow = FunArr_Max(arr, maxRow);                     //Переходим в функ-ю для нахождения макс. строки
+           minRow = FunArr_Min(arr, minRow);                      //Переходим в функ-ю для нахождения мин. строки, передаем значения с функции
+           maxRow = FunArr_Max(arr, maxRow);                     //Переходим в функ-ю для нахождения макс. строки, передаем значения с функции
            arr = ModifFunArr(arr, minRow, maxRow, a);           //Переходим в функ-ю модернизации рванного массива
 
            System.Console.WriteLine("Измененный массив:");
