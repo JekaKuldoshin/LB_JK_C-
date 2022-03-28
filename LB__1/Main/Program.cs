@@ -49,10 +49,10 @@ namespace LB__1
             System.Console.WriteLine();
         }
 
-        static void FunArr(int[][] arr, int[] minRow, int[] maxRow)     //\\ //\\ Функция для нахождения Макс. и Мин. //\\ //\\
+        public static int [] FunArr_Min(int[][] arr, int [] minRow)     //\\ //\\ Функция для нахождения Макс. и Мин. //\\ //\\
         {
+
             int min = RowSum(arr, 0);                       //Переменная с минимальной суммой строки
-            int max = RowSum(arr, 0);                      //Переменная с максимальнй суммой строки
 
             for (int i = 1; i < arr.Length; i++)         //Перебираем строки
             {
@@ -62,6 +62,18 @@ namespace LB__1
                     min = tempMin;
                     minRow = arr[i];
                 }
+            }
+            return minRow;
+        }
+
+        public static int [] FunArr_Max(int[][] arr, int[] maxRow)     //\\ //\\ Функция для нахождения Макс. и Мин. //\\ //\\
+        {
+
+            int min = RowSum(arr, 0);                       //Переменная с минимальной суммой строки
+            int max = RowSum(arr, 0);                      //Переменная с максимальнй суммой строки
+
+            for (int i = 1; i < arr.Length; i++)         //Перебираем строки
+            {
                 int tempMax = RowSum(arr, i);     //Доп. переменная для замен
                 if (max < tempMax)               //Если Макс. меньше Доп.переменной идет замена
                 {
@@ -69,6 +81,7 @@ namespace LB__1
                     maxRow = arr[i];
                 }
             }
+            return maxRow;
         }
 
         static int [][] ModifFunArr(int[][] arr, int[] minRow, int[] maxRow, int a)       //\\ //\\ Функция изменения массива //\\ //\\
@@ -93,10 +106,12 @@ namespace LB__1
             return arr;                                //Возвращаем в Main
         }
 
+        
+
         static void Main(string[] args)
         {
 
-            Console.WriteLine("Введите количество строк массива:");
+            Console.WriteLine("Введите количество строк jagged массива:");
             int a = Convert.ToInt32(Console.ReadLine());                     //Запрашиваем кол. строк
             int[][] arr = new int[a][];                                     //Создали рванный массив и присволили кол. строк
 
@@ -105,16 +120,16 @@ namespace LB__1
             Console.WriteLine("\nИзначальный массив:");
             WriteArr(arr);                                              //Функ-я вывода
 
-            int[] minRow = arr[0];                                    //Ставим поумолчанию мин строку массива
-            int[] maxRow = arr[0];                                   //Ставим поумолчанию макс строку массива
+           int[] minRow = arr[0];                                    //Ставим поумолчанию мин строку массива
+           int[] maxRow = arr[0];                                   //Ставим поумолчанию макс строку массива
 
-            FunArr(arr, minRow, maxRow);                           //Переходим в функ-ю для нахождения макс. и мин. строки
-
-           arr = ModifFunArr(arr, minRow, maxRow, a);            //Переходим в функ-ю модернизации рванного массива
+           minRow = FunArr_Min(arr, minRow);                      //Переходим в функ-ю для нахождения мин. строки
+           maxRow = FunArr_Max(arr, maxRow);                     //Переходим в функ-ю для нахождения макс. строки
+            arr = ModifFunArr(arr, minRow, maxRow, a);          //Переходим в функ-ю модернизации рванного массива
 
             //вывод измененного исходного массива
             System.Console.WriteLine("Измененный массив:");
-            WriteArr(arr);                                    //Функ-я вывода
+            WriteArr(arr);                                   //Функ-я вывода
 
 
             System.Console.ReadKey();
