@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Lab_3.Products.Monitor">
+    <Position X="10.25" Y="1.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAEAIAgAAAAAAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>Products\Monitor.cs</FileName>
+      <NewMemberFileName>products\Monitor.cs</NewMemberFileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lab_3.Products.Product">
+    <Position X="4.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgABIAAAAAAAAAAEAAAAAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Products\Product.cs</FileName>
+      <NewMemberFileName>products\Product.cs</NewMemberFileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lab_3.Products.Mouse">
+    <Position X="2.5" Y="7.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAQAAAAAAAAAAAAQAAAAAAAA=</HashCode>
+      <FileName>Products\Mouse.cs</FileName>
+      <NewMemberFileName>products\Mouse.cs</NewMemberFileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lab_3.Products.Periphery">
+    <Position X="4.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAABAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Products\Periphery.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lab_3.Products.Keyboard">
+    <Position X="6.5" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIAEAAAAAAAAAAAAAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>Products\Keyboard.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
